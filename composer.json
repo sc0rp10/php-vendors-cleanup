@@ -1,5 +1,5 @@
 {
-    "name": "sc0/php-vendors-cleanup",
+    "name": "sc0/vendors-cleanup",
     "description": "This package removes unwanted files from vendor directory",
     "type": "library",
     "license": "MIT",

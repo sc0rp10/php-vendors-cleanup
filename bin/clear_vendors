@@ -11,10 +11,16 @@ find vendor -name 'LICENSE' -exec rm -rf {} +
 find vendor -name 'Makefile' -exec rm -rf {} +
 find vendor -name 'composer.json' -exec rm -rf {} +
 find vendor -name 'composer.lock' -exec rm -rf {} +
-find vendor -type d -name "docs" -exec rm -rf {} +
-find vendor -type d -name "doc" -exec rm -rf {} +
-find vendor -type d -name "test" -exec rm -rf {} +
-find vendor -type d -name "tests" -exec rm -rf {} +
-find vendor -type d -name "Test" -and -not -path vendor/twig/twig/lib/Twig/Node/Expression/Test -exec rm -rf {} +
-find vendor -type d -name "Tests" -exec rm -rf {} +
-fgrep -iv '\tests\' vendor/composer/autoload_classmap.php > vendor/composer/autoload_classmap.php_ && mv vendor/composer/autoload_classmap.php_ vendor/composer/autoload_classmap.php
+
+find vendor -type d -name 'docs' -exec rm -rf {} +
+find vendor -type d -name 'doc' -exec rm -rf {} +
+find vendor -type d -name 'test' -exec rm -rf {} +
+find vendor -type d -name 'tests' -exec rm -rf {} +
+find vendor -type d -name 'Test' -and -not -path vendor/twig/twig/lib/Twig/Node/Expression/Test -exec rm -rf {} +
+find vendor -type d -name 'Tests' -exec rm -rf {} +
+
+rm -rf 'vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle'
+rm -rf 'vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle'
+rm -rf 'vendor/symfony/symfony/src/Symfony/Component/Intl'
+
+fgrep -iv 'tests' vendor/composer/autoload_classmap.php > vendor/composer/autoload_classmap.php_ && mv vendor/composer/autoload_classmap.php_ vendor/composer/autoload_classmap.php
