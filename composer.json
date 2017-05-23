@@ -1,0 +1,15 @@
+{
+    "name": "sc0/php-vendors-cleanup",
+    "description": "This package removes unwanted files from vendor directory",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Zamyakin",
+            "email": "dev@weblab.pro"
+        }
+    ],
+    "bin": ["bin/clear_vendors"],
+    "minimum-stability": "dev",
+    "require": {}
+}
