@@ -27,5 +27,7 @@ $ find vendor -type f | wc -l
 
 ## Usage
 
-`composer require sc0/vendors-cleanup --no-dev`
-`./vendors/bin/clear_vendors`
+```
+composer require sc0/vendors-cleanup --no-dev
+./vendors/bin/clear_vendors
+```
