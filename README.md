@@ -29,5 +29,5 @@ $ find vendor -type f | wc -l
 
 ```
 composer require sc0/vendors-cleanup
-./vendors/bin/clear_vendors
+./vendor/bin/clear_vendors
 ```
