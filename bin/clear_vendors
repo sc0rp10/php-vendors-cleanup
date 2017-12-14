@@ -28,3 +28,5 @@ rm -rf 'vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle'
 rm -rf 'vendor/symfony/symfony/src/Symfony/Component/Intl'
 
 fgrep -iv 'tests' vendor/composer/autoload_classmap.php > vendor/composer/autoload_classmap.php_ && mv vendor/composer/autoload_classmap.php_ vendor/composer/autoload_classmap.php
+
+rm -rf vendor/sc0/vendors-cleanup
