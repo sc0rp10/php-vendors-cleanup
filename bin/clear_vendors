@@ -27,6 +27,7 @@ rm -rf 'vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle'
 rm -rf 'vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle'
 rm -rf 'vendor/symfony/symfony/src/Symfony/Component/Intl'
 rm -rf 'vendor/symfony/intl/Resources/data/'
+rm -rf 'vendor/symfony/twig-bundle/Resources/views'
 
 fgrep -iv 'tests' vendor/composer/autoload_classmap.php > vendor/composer/autoload_classmap.php_ && mv vendor/composer/autoload_classmap.php_ vendor/composer/autoload_classmap.php
 
