@@ -20,7 +20,8 @@ find vendor -type d -name 'docs' -exec rm -rf {} +
 find vendor -type d -name 'doc' -exec rm -rf {} +
 find vendor -type d -name 'test' -exec rm -rf {} +
 find vendor -type d -name 'tests' -exec rm -rf {} +
-find vendor -type d -name 'Test' -and -not -path vendor/twig/twig/lib/Twig/Node/Expression/Test -exec rm -rf {} +
+find vendor -type d -name 'Test' -and -not -path vendor/twig/twig/lib/Twig/Node/Expression/Test -and -not -path vendor/twig/twig/src/Node/Expression/Test -exec rm -rf {} +
+
 find vendor -type d -name 'Tests' -exec rm -rf {} +
 
 rm -rf 'vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle'
